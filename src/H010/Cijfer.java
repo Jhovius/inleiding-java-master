@@ -63,12 +63,14 @@ public class Cijfer extends Applet {
             if
             (userInput.equals("10")) {
                 text = "dit cijfer is voldoende";
+
+                repaint();
             }
 
 
 
-            textvak.setText("");
-            repaint();
+
+
 
 
 
