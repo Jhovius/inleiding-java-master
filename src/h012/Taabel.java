@@ -40,14 +40,18 @@ public class Taabel extends Applet {
         g.drawString("Dit is :" + timesFound, 50, 20);
     }
 
+
+
     class vakListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            String input = textvak.getText();
+           String input = textvak.getText();
             double inputDouble = Double.parseDouble(input); //make it a double
             for (int teller = 0; teller < getal.length; teller++) {
                 if (getal[teller] == inputDouble) {
                     result = "Match gevonden op index: " + teller + "!";
                     timesFound++;
+
+
                 }
                 result = "Geen match!";
             }
